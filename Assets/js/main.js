@@ -2,6 +2,9 @@ $(document).ready(function(){
     $("#sidebar-menu").on("click", function(){
         $("#sidebar").toggleClass("show")
         // $("html").addClass("backdrop")
+        // window.scrollTo(0, 0);
+        $('html, body').animate({scrollTop:0}, 'slow');
+        $('#sidebar').animate({scrollTop:0}, 'fast');
     })
 
     $('html, body').on('click', function (e) {
@@ -16,15 +19,13 @@ $(document).ready(function(){
 
     
 
-    $(window).bind("resize", function () {
-        if ($(this).width() > 992) {
-            // $('html').removeClass('backdrop')
-        } 
-    });
+    // $(window).bind("resize", function () {
+    //     if ($(this).width() > 992) {
+    //         // $('html').removeClass('backdrop')
+    //     } 
+    // });
 
-    if($("#status-protocolo").hasClass("show")){
-        startAnimation() 
-    }
+    
 
     // tagbarmodal
 
