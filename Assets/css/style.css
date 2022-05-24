@@ -983,7 +983,7 @@ ul{
  }
 
  .card-img-prov{
-     background: url(Assets/img/banners/Banner_Comprar_Credito.png) no-repeat left top,
+     background: url(/Assets/img/banners/Banner_Comprar_Credito.png) no-repeat left top,
      linear-gradient(
         rgba(5,55,126,1),rgba(5,55,126,1)
       );
