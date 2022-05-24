@@ -1123,12 +1123,12 @@ ul{
 
     .sidebar-consult ~ .icon-mobile-control,
     .sidebar-consult.show ~ .icon-mobile-control{    
-        content: "";    
-        position: absolute;
+        content: "";
+        position: fixed;
         width: 40px;
         height: 40px;
-        right: -10px;
-        bottom: -10px;
+        right: 10px;
+        top: 210px;
         background-color: #fff;
         color: #1aa0e1;
         border: 2px solid #1aa0e1;
@@ -1175,6 +1175,11 @@ ul{
     font-size:12px;
     line-height: 1.1;
     text-transform: uppercase;
+}
+@media screen and (max-width:990px){
+    .result-container{
+        margin-left: 0px;
+    }
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
