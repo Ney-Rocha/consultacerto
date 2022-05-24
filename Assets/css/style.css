@@ -1312,6 +1312,10 @@ ul{
         max-width: 100%;
         padding: 50px 30px
     }
+
+    .call-to-action{
+        margin-bottom: 20px;
+    }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
   ------------- COMPONENTS RESULTADO CONSULTA ------------
