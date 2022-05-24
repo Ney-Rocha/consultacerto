@@ -729,7 +729,7 @@ ul{
  #banner-cadastre{
     width: 100%;
     overflow: auto;
-    background: url('Assets/img/banners/Banner_Cadastro\ 1.png') no-repeat center center;
+    background: url('Assets/img/banners/Banner_Cadastro.png') no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -760,7 +760,7 @@ ul{
     #banner-cadastre{
         width: 100%;
         overflow: auto;
-        background: url('Assets/img/banners/Banner_Cadastro\ 1.png') no-repeat center center;
+        background: url('Assets/img/banners/Banner_Cadastro.png') no-repeat center center;
         background-size: cover;
         overflow: hidden;
     }
@@ -769,14 +769,14 @@ ul{
 @media screen and (max-width:990px){
     
     #banner-cadastre{
-        background: url('Assets/img/banners/Banner_Cadastro\ 1.png') no-repeat center right;
+        background: url('Assets/img/banners/Banner_Cadastro.png') no-repeat center right;
     }
 }
 
 @media screen and (max-width:500px){
     
     #banner-cadastre{
-        background: linear-gradient( rgba(43 80 144/ .7),rgba(43 80 144/ .7) ), url('Assets/img/banners/Banner_Cadastro\ 1.png') no-repeat center right,
+        background: linear-gradient( rgba(43 80 144/ .7),rgba(43 80 144/ .7) ), url('Assets/img/banners/Banner_Cadastro.png') no-repeat center right,
         linear-gradient( rgb(43 80 144),rgb(125 136 183) );
     }
 
@@ -790,7 +790,7 @@ ul{
  #banner-contato{
     width: 100%;
     overflow: auto;
-    background: url('Assets/img/banners/Banner_Contato\ 1.png') no-repeat center center;
+    background: url('Assets/img/banners/Banner_Contato.png') no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -800,7 +800,7 @@ ul{
     #banner-contato{
         width: 100%;
         overflow: auto;
-        background: url('Assets/img/banners/Banner_Contato\ 1.png') no-repeat center center;
+        background: url('Assets/img/banners/Banner_Contato.png') no-repeat center center;
         background-size: cover;
         overflow: hidden;
     }
@@ -809,14 +809,14 @@ ul{
 @media screen and (max-width:990px){
     
     #banner-contato{
-        background: url('Assets/img/banners/Banner_Contato\ 1.png') no-repeat center right;
+        background: url('Assets/img/banners/Banner_Contato.png') no-repeat center right;
     }
 }
 
 @media screen and (max-width:500px){
     
     #banner-contato{
-        background: linear-gradient( rgba(43 80 144/ .7),rgba(43 80 144/ .7) ), url('Assets/img/banners/Banner_Contato\ 1.png') no-repeat center right,
+        background: linear-gradient( rgba(43 80 144/ .7),rgba(43 80 144/ .7) ), url('Assets/img/banners/Banner_Contato.png') no-repeat center right,
         linear-gradient( rgb(43 80 144),rgb(125 136 183) );
     }
 
@@ -874,7 +874,7 @@ ul{
 }
 
 .banner-img-container{
-    background: url('Assets/img/banners/Banner_Login\ 1.png') no-repeat left center;
+    background: url('Assets/img/banners/Banner_Login.png') no-repeat left center;
     width: 50%;
     background-size: cover;
     overflow: hidden;
@@ -890,7 +890,7 @@ ul{
     linear-gradient(
       rgba(255,255,255,.2),rgba(255,255,255,.9)
     ),
-    url('Assets/img/banners/Banner_Login\ 1.png') no-repeat center center;
+    url('Assets/img/banners/Banner_Login.png') no-repeat center center;
         width: 100%;
         background-size: cover;
     }
@@ -983,7 +983,7 @@ ul{
  }
 
  .card-img-prov{
-     background: url("Assets/img/banners/Banner_Comprar_Crédito\ 1.png") no-repeat left top,
+     background: url("Assets/img/banners/Banner_Comprar_Crédito.png") no-repeat left top,
      linear-gradient(
         rgba(5,55,126,1),rgba(5,55,126,1)
       );
