@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Certo</title>
+
+     <!-- Favicons -->
+     <link rel="apple-touch-icon" href="/Assets/img/favicon/apple-icon-180x180.png" sizes="180x180">
+     <link rel="icon" href="/Assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+     <link rel="icon" href="/Assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+     <link rel="icon" href="/Assets/img/favicon/apple-icon.png">  
+     
+     <!--script google-->
+     <script src='https://www.google.com/recaptcha/api.js'></script>  
+ 
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="bg-white-light">
+
+        <header>
+            <div class="header_page_login bg-white">
+                <div class="container">
+                    
+                    <nav class="navbar navbar-expand-lg">
+                        <a href="#">
+                            <div class="brand_login">
+                                <img class="responsive_img" src="/Assets/img/brand/CNPJ_Consulta_Certo_logo.png" alt="Logo Consulta Certo">
+                            </div>
+                        </a> <!--link_brand--> 
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                          <div class="navbar-nav ">
+                            <a class="nav-link active" href="#"><span>Home</span> <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><span>Pacotes</span></a>
+                            <a class="nav-link" href="#"><span>Cadastre-se</span></a>
+                            <a class="nav-link" href="#"><span>Contato</span></a>
+                            <a class="nav-link link-especial btn-icon" href="#"> 
+                                <div class="icon-btn">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                 Painel de Controle
+                            </a>
+                          </div>
+                        </div>
+                      </nav>
+                </div><!--Container-->
+            </div><!--header_page_login-->
+        </header> <!--header-->
+
+        <main class="bg-gray">
+            <section class="section-banner">
+                <div class="banner-img-container">
+                </div>                             
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="wrap-content">
+                                <div class="wrap-content-login">
+
+                                    <div class="title-content">
+                                        <h2 class="text-primary">
+                                            Faça o login e comece agora
+                                            mesmo a consulta de CNPJ
+                                        </h2>
+                                    </div> <!--title-content-->
+                                    <div class="body-content">
+                                        <div class="card card-login bg-white">
+    
+                                            <div class="card-header">
+                                                <div class="card-header-title">
+                                                    <div class="card-title-icon text-secondary">
+                                                        <i class="fas fa-user-circle"></i>                                                    
+                                                    </div>
+                                                    <h3 class="text-primary">Acessar</h3>
+                                                </div> 
+                                            </div>
+    
+                                            <div class="card-body pb-0">
+                                                <form action="home_restrita.html">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label">E-mail:</label>
+                                                        <input type="email" class="form-control" required>
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label">Senha:</label>
+                                                        <input type="password" class="form-control" required>
+                                                        <!-- <span><small>Esqueceu sua senha?</small></span> -->
+                                                    </div>
+                                                    <div class=" mb-3">
+                                                        <button class="btn btn-primary mt-5 btn-block" type="submit">Entrar</button>
+                                                    </div>
+                                                    <div class="forgot-key">
+                                                        <p>
+                                                            <small>
+                                                                <a href="#" data-toggle="modal" data-target="#forgotpassword">Esqueceu sua senha?</a>
+                                                            </small>
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div><!--card-->
+    
+                                        <div class="add-content">
+                                            <p class="create-count mb-3">
+                                                Não possui um conta? 
+                                                <strong >
+                                                    <a href="cadastre.html">Cadastre-se!</a>
+                                                </strong>
+                                            </p>
+                                            <p class="info-complice"> 
+                                                <a href="#">Lei Geral de Proteção de Dados? (LGPD)</a>
+                                            </p>
+                                        </div>
+                                        
+                                    </div> <!--body-content-->                               
+                                </div><!--wrap-content-login-->
+                            </div><!--wrap-content-->
+                            
+                            
+                        </div><!--col-6-->
+                    </div><!--row-->
+                </div><!--container-->
+            </section>
+           
+        </main><!--Principal-->
+
+       <footer>
+           <div class="footer-nav bg-white-middle">
+                <div class="container">
+                    <div class="footer-nav-content">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-primary"><strong>Principal</strong></p>
+                                        <ul class="footer-navbar">
+                                            <li class="footer-nav-item"><a href="#">Home</a></li>
+                                            <li class="footer-nav-item"><a href="#">Comprar crédito</a></li>
+                                            <li class="footer-nav-item"><a href="#">Atendimento</a></li>
+                                            <li class="footer-nav-item"><a href="#">Login </a></li>
+                                        </ul>
+                                    </div><!--col-4-->
+                                    <div class="col-lg-4">
+                                        <p class="text-primary"><strong>Pacotes</strong></p>
+                                        <ul class="footer-navbar">
+                                            <li class="footer-nav-item"><a href="#">Comprar Pacotes</a></li>
+                                        </ul>
+                                    </div><!--col-4-->
+                                    <div class="col-lg-4">
+                                        <p class="text-primary"><strong>Acessos</strong></p>
+                                        <ul class="footer-navbar">
+                                            <li class="footer-nav-item"><a href="#">Painel de controle</a></li>
+                                            <li class="footer-nav-item"><a href="#">Cadastre-se</a></li>
+                                            <li class="footer-nav-item"><a href="#">Contato</a></li>
+                                        </ul>
+                                    </div><!--col-4-->
+                                </div><!--row-->
+                            </div><!--col-8-->
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="contact-container">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                            <div class="contact-content">
+                                                <p><strong>Precisa de um atendimento direto?</strong></p>
+                                                <p>Entre em contato com a CNPJ Consulta Certo pelo</p> 
+                                                <p> 
+                                                    e-mail:
+                                                    <strong>
+                                                         <a href="mailto:atendimento@cnpjconsultacerto.com.br"> atendimento@cnpjconsultacerto.com.br</a>
+                                                    </strong> 
+                                                </p>
+                                            </div><!--contact-content-->
+                                        </div><!--contact-container-->
+                                    </div><!--col-12-->
+                                </div><!--row-->
+                            </div><!--col-4-->
+                        </div><!--row-->
+                    </div>                    
+                </div><!--container-->
+           </div><!--footer-nav-->
+
+           <div class="footer-page bg-blue">
+               <div class="container">
+                   <div class="footer-page-content">
+                       <div class="footer-brand">
+                           <img src="/Assets/img/brand/CNPJ_Consulta_Certo_logo_branco.png" alt="logotipo Consulta Certo branca" class="img-fluid">
+                        </div>
+                        <div class="footer-copy">Copyright © 2022 CNPJ Consulta Certo / Diretrix.On / Rua Cunha Gago, 700 - 3º andar Pinheiros - São Paulo - SP</div>
+                   </div><!--footer-content-->
+               </div><!--container-->
+           </div><!--footer-page-->
+       </footer>
+    </div>
+    
+
+    <!-- Modal -->
+<div class="modal   fade" id="forgotpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-modal" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mb-5">
+            <div class="modal-title text-center mt-4 mb-4">
+                <h2>Esqueci minha senha</h2>
+            </div>
+
+
+            <div class="card car-border ">
+                <div class="card-body">
+                    <form action="#" class="mt-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="forgot-password">E-mail</label>
+                                    <input type="text" id="forgot-password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button type="button" class="btn btn-primary pull-right">Enviar</button>
+                            </div>
+                            
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Certo</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/Assets/img/favicon/apple-icon-180x180.png" sizes="180x180">
+    <link rel="icon" href="/Assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/Assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/Assets/img/favicon/manifest.json /manifest.json">    
+    <link rel="icon" href="/Assets/img/favicon/apple-icon.png">  
+    <script src='https://www.google.com/recaptcha/api.js'></script>  
+
+     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_page_login bg-white">
+            <div class="container">
+                
+                <nav class="navbar navbar-expand-lg">
+                    <a href="#">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="/Assets/img/brand/CNPJ_Consulta_Certo_logo.png" alt="Logo Consulta Certo">
+                        </div>
+                    </a> <!--link_brand--> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                      <div class="navbar-nav nav-restrict">
+                        <a class="nav-link " href="index.html"><span>Home</span> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="out_package.html"><span>Pacotes</span></a>
+                        <a class="nav-link " href="cadastre.html"><span>Cadastre-se</span></a>
+                        <a class="nav-link active" href="contato.html"><span>Contato</span></a>
+                        <a class="nav-link link-especial btn-icon" href="login.html"> 
+                            <div class="icon-btn">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                             Painel de Controle
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <main class="bg-white">
+        
+       <section id="banner-contato" class="bg-blue-dark">
+           <div class="container">
+               <div class="section-content ">
+                   <div class="row">
+                        <div class="col-lg-7 p-5 banner-align-center mt-5 ">
+                            <div class="banner-content banner-control ">
+                                <div class="banner-header">
+                                    <h1 class="mb-3">Contato</h1>
+                                </div>
+                                <div class="banner-body">
+                                    <h5 class="mb-3">Caso tenha alguma dúvida ou queira dar alguma sugestão, envie um e-mail para nossa equipe de atendimento.</h5>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                  
+               </div>
+           </div>
+       </section>
+
+       <section id="form-cadastre">
+           <div class="container">
+               <div class="section-content">
+                   <div class="content-form mt-5">
+                       <div class="form-header">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h5 class="mb-5">Para que sua mensagem seja enviada corretamente preencha com atenção os campos abaixo:</h5>
+                                </div>
+                                
+                            </div>
+                            <div class="form-title text-primary">
+                                Formulário de contato:
+                            </div>
+                       </div>
+                       
+                        <form action="">
+                            <div class="row">
+                               
+                                
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="nomeCompleto" class="control-label label-strong">Nome completo:</label>
+                                        <input type="text" id="nomeCompleto" class="form-control" required>
+                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                    </div>
+                                </div>
+                               
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="email" class="control-label label-strong">E-mail:</label>
+                                        <input type="email" id="email" class="form-control" required>
+                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                    </div>
+                                </div>
+
+                               
+                                
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="assunto" class="control-label label-strong">Assunto</label>
+                                        <input type="email" id="assunto" class="form-control" placeholder="Exemplo: Comercial, Dúvida, Atendimento, etc">
+                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 mb-5">
+                                    <div class="form-group">
+                                        <label for="assunto" class="control-label label-strong">Mensagem</label>
+                                        <textarea class="form-control" name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                            
+                                <div class="col-lg-6">
+                                    <div id="recaptcha" class="g-recaptcha" style="margin-bottom: 15px;" data-sitekey="6LciDz8UAAAAAHn0TXa4Vo5JA9d6TrhPfUaOFHWz"></div>
+                                </div>
+                                <div class="col-lg-5 offset-lg-1">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-block">Enviar</button>
+                                    </div>                                   
+                                </div>
+    
+                            </div>
+                        </form>
+                   </div>
+                   
+               </div>
+           </div>
+       </section>
+
+     
+    </main><!--Principal-->
+
+    <footer>
+       <div class="footer-nav bg-white-middle">
+            <div class="container">
+                <div class="footer-nav-content">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="text-primary"><strong>Principal</strong></p>
+                                    <ul class="footer-navbar">
+                                        <li class="footer-nav-item"><a href="index.html">Home</a></li>
+                                        <li class="footer-nav-item"><a href="out-package.html">Comprar crédito</a></li>
+                                        <li class="footer-nav-item"><a href="contato.html">Atendimento</a></li>
+                                        <li class="footer-nav-item"><a href="login.html">Login </a></li>
+                                    </ul>
+                                </div><!--col-4-->
+                                <div class="col-lg-4">
+                                    <p class="text-primary"><strong>Pacotes</strong></p>
+                                    <ul class="footer-navbar">
+                                        <li class="footer-nav-item"><a href="out-package.html">Comprar Pacotes</a></li>
+                                    </ul>
+                                </div><!--col-4-->
+                                <div class="col-lg-4">
+                                    <p class="text-primary"><strong>Acessos</strong></p>
+                                    <ul class="footer-navbar">
+                                        <li class="footer-nav-item"><a href="login.html">Painel de controle</a></li>
+                                        <li class="footer-nav-item"><a href="cadastre.html">Cadastre-se</a></li>
+                                        <li class="footer-nav-item"><a href="contato.html">Contato</a></li>
+                                    </ul>
+                                </div><!--col-4-->
+                            </div><!--row-->
+                        </div><!--col-8-->
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="contact-container">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <p><strong>Precisa de um atendimento direto?</strong></p>
+                                            <p>Entre em contato com a CNPJ Consulta Certo pelo</p> 
+                                            <p> 
+                                                e-mail:
+                                                <strong>
+                                                     <a href="mailto:atendimento@cnpjconsultacerto.com.br"> atendimento@cnpjconsultacerto.com.br</a>
+                                                </strong> 
+                                            </p>
+                                        </div><!--contact-content-->
+                                    </div><!--contact-container-->
+                                </div><!--col-12-->
+                            </div><!--row-->
+                        </div><!--col-4-->
+                    </div><!--row-->
+                </div>                    
+            </div><!--container-->
+       </div><!--footer-nav-->
+
+       <div class="footer-page bg-blue">
+           <div class="container">
+               <div class="footer-page-content">
+                   <div class="footer-brand">
+                       <img src="/Assets/img/brand/CNPJ_Consulta_Certo_logo_branco.png" alt="logotipo Consulta Certo branca" class="img-fluid">
+                    </div>
+                    <div class="footer-copy">Copyright © 2022 CNPJ Consulta Certo / Diretrix.On / Rua Cunha Gago, 700 - 3º andar Pinheiros - São Paulo - SP</div>
+               </div><!--footer-content-->
+           </div><!--container-->
+       </div><!--footer-page-->
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

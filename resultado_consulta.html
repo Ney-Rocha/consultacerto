@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Certo</title>
+     <!-- Favicons -->
+     <link rel="apple-touch-icon" href="/Assets/img/favicon/apple-icon-180x180.png" sizes="180x180">
+     <link rel="icon" href="/Assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+     <link rel="icon" href="/Assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+     <link rel="icon" href="/Assets/img/favicon/apple-icon.png">    
+ 
+      <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="/Assets/plugins//c3/c3.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header_page_login bg-white">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg">
+                    <a href="#">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="/Assets/img/brand/CNPJ_Consulta_Certo_logo.png" alt="Logo Consulta Certo">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                        
+                        <a  href="pacotes.html" class="nav-link "><span>Pacotes</span></a>
+                        <a  href="contato.html" class="nav-link" ><span>Atendimento</span></a>
+                        <a href="home_restrita.html" class="nav-link"><span>Nova Consulta</span></a>
+                        <div class=" dropdown">
+                            <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                <div class="icon-btn">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                    Meu Perfil
+                            </a>
+                            <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                    <div class="data-user">
+                                        <i class="fa fa-user fa-fw"></i> Usuário
+                                        <span class="pull-right ">Marcos</span>                                        
+                                    </div>
+                                </a>                                    
+                                <div class="dropdown-item-content"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-wifi fa-fw"></i> I.P
+                                    <span class="pull-right">187.75.227.19</span>
+                                </a>
+                                <div class="dropdown-item-content"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                    <span class="pull-right">Alterar</span>
+                                </a>
+                                <div class="dropdown-item-content"></div>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                    <span class="pull-right">Sair</span>
+                                </a>
+                            </div><!--dropdown-menu-->
+                        </div><!--dropdown-->
+                        </div>
+                    </div>
+                    </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="header-area bg-blue">
+        <div class="container">
+            <div class="page-hello">
+                <p class="text-white">Olá <span>Marcos</span>, bem vindo!</p>
+            </div><!--page-hello-->
+        </div><!--container-->
+    </div><!--page-hello-->
+
+    <main class="main bg-white ">
+
+        <section id="consulta">               
+            <div class="container">
+                <div class="section-content">
+                    
+                    <div class="consult-container ">
+
+                        <div class="sidebar-consult" id="sidebar">
+                            
+                            <ul class="sidebar-nav" >
+                                <li class="sidebar-nav-item active">
+                                    <a href="#" id="resumoConsulta" data-toggle="tooltip" data-placement="right" title="Resumo Score">Resumo Score</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="dadosCadastrais" data-toggle="tooltip" data-placement="right" title="Dados Cadastrais">Dados Cadastrais</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="endereco" data-toggle="tooltip" data-placement="right" title="Endereços">Endereços</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="emails" data-toggle="tooltip" data-placement="right" title="Emails">Emails</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    
+                                    <a href="#" id="telefones" data-toggle="tooltip" data-placement="right" title="Telefones">Telefones</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="score" data-toggle="tooltip" data-placement="right" title="Scores/Limites">Scores/Limites</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="socios" data-toggle="tooltip" data-placement="right" title="Sócios">Sócios</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="representantes" data-toggle="tooltip" data-placement="right" title="Representantes">Representantes</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="detalhePefin" data-toggle="tooltip" data-placement="right" title="Detalhe Pefin">Detalhe Pefin</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="detalheRefin" data-toggle="tooltip" data-placement="right" title="Detalhe Refin">Detalhe Refin</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="detalheCcf" data-toggle="tooltip" data-placement="right" title="Detalhe CCF">Detalhe CCF</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="detalheDividaVenc" data-toggle="tooltip" data-placement="right" title="Detalhe Dívida Vencida">Detalhe Dívida Vencida</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="detalheBvs" data-toggle="tooltip" data-placement="right" title="Detalhe BVS">Detalhe BVS</a>
+                                </li>
+                                <li class="sidebar-nav-item">
+                                    <a href="#" id="detalheProtesto" data-toggle="tooltip" data-placement="right" title="Detalhe Protesto">Detalhe Protesto</a>
+                                </li>
+                                <li class="sidebar-nav-item item-download">
+                                    <a href="#" id="Download do relatório em PDF" data-toggle="tooltip" data-placement="right" title="Download do relatório em PDF">
+                                        <span class="mr-2"> 
+                                            <i class="fa fa-file-pdf " aria-hidden="true"></i>
+                                        </span>                                           
+                                        Download do relatório em PDF
+                                    </a>
+                                </li>
+                            </ul>                               
+                        </div><!--sidebar-consult-->
+
+                        <div class="icon-mobile-control" id="sidebar-menu">
+                        </div><!--icon-mobile-->
+                        
+                        <div class="result-container">
+
+                            <!--resumo score-->
+                            <div class="card card-border card-border mb-4"  id="resultadoResumoConsulta" >
+                                <div class="card-header  ">
+                                    <h5 class="strong text-primary">Resumo Score</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div id="chart"></div>
+                                        </div> <!--col-6-->
+                                        <div class="col-lg-6">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>CCF: </strong>  
+                                                            <span >0</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Dívida vencida:</strong> R$ 
+                                                            <span>0</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>PEFIN:</strong> R$ 
+                                                            <span>38.991,84 </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>PEFIN dívida ativa: </strong> R$ 
+                                                            <span>8.991,84:</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>PEFIN percentual: </strong>  
+                                                            <span>10.83</span>%
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Dívida ativa percentual: </strong>  
+                                                            <span>0.0</span>%
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>REFIN: </strong> R$ 
+                                                            <span>0,00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Protesto: </strong> R$ 2
+                                                            <span>0.000,00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Protesto Percentual: </strong>  
+                                                            <span>11.6</span>%
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!--content-result-->
+                                        </div><!--col-6>-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--dados Cadastrais-->
+                            <div class="card card-border mb-4 hide" id="resultadoDadosCadastrais">
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Dados Cadastrais</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>CNPJ: </strong>
+                                                            <span >000.000.000/0000-00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Status risco: </strong>
+                                                            <span>"Baixo Risco"</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Razão social:</strong> 
+                                                            <span>"empresa XPTO" </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Nome Fantasia: </strong>
+                                                            <span>fantasia XPTO</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Situação Cadastral: </strong>
+                                                            <span>"Ativa"</span
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Natureza Jurídica: </strong>
+                                                            <span>”2062 - SOCIEDADE EMPRESÁRIA LIMITADA”</span>%
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>REFIN: </strong>
+                                                            <span>0,00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>CNAE: </strong> 
+                                                            <span>"Construção XPTO"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Cód. IBGE: </strong>
+                                                            <span>3201407</span>%
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Matriz: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Faixa de Faturamento: </strong>
+                                                            Dê R$ 
+                                                            <span>240,01 Mil</span> á R$ 
+                                                            <span>2.4 MM</span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de funcionários: </strong>
+                                                            <span>11</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Porte: </strong>
+                                                            <span>"ME"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Tipo: </strong>
+                                                            <span>ME</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Tipo CNAE </strong>
+                                                            <span>"Industria"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Sócio Ambiental: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cód. Ind. Operacionalidade: </strong>
+                                                            <span>5</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Descr. Ind. Operacionalidade: </strong>
+                                                            <span>"Muito Alto"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Data de Abertura: </strong>
+                                                            <span>12/11/2013</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Meses de Abertura: </strong>
+                                                            <span>100</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Ramo de atividade: </strong>
+                                                            <span>S040300 Empreiteira</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cód. Ramo de Atividade: </strong>
+                                                            <span>NULL</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--Endereços-->
+                            <div class="card card-border mb-4 hide" id="resultadoEnderecos">
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Endereços</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Endereço: </strong>
+                                                            <span >********************</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Bairro: </strong>
+                                                            <span>"Pinheiros"</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Cidade:</strong> 
+                                                            <span>"São Paulo" </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>UF: </strong>
+                                                            <span>SP</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>CEP: </strong>
+                                                            <span>"05421-000"</span
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Setor: </strong>
+                                                            <span>NULL</span>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--emails-->
+                            <div class="card card-border mb-4 hide" id="resultadoEmails">
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Emails </h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Email 1: </strong>
+                                                            <span >"contatoxpto@xpto.com.br"</span>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+
+                            <!--Telefones-->
+                            <div class="card card-border mb-4 hide" id="resultadoTelefones">
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Telefones </h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>DDD: </strong>
+                                                            <span >"11"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Telefone: </strong>
+                                                            <span >"2827-0201"</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--Scores-->
+                            <div class="card card-border mb-4 hide"  id="resultadoScore" >
+                                <div class="card-header  ">
+                                    <h5 class="strong text-primary">Score / Limites</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Capital Social: </strong> R$ 
+                                                            <span >50.000,00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Vl. fat. Pres. Anual:</strong> R$ 
+                                                            <span>36.000.00</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Capacidade pagamento:</strong> R$ 
+                                                            <span>138.991,84 </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Limite de Crédito Diretrix: </strong> R$ 
+                                                            <span>48.991,84:</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Status risco: </strong>  
+                                                            <span>"Baixo risco"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Score covid: </strong>  
+                                                            <span>"Baixo Risco</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Score Compliance: </strong> 
+                                                            <span>Null</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Score Pefin: </strong>
+                                                            <span>"Alto risco"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Score Refin: </strong>
+                                                            <span>"Alto risco"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Score CCF: </strong>
+                                                            <span>"Médio risco"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Score Classe: </strong>
+                                                            <span>"Médio risco"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Classe: </strong>
+                                                            <span>"E"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Porte descrição: </strong>
+                                                            <span>"Pequeno"</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!--content-result-->
+                                        </div><!--col-6>-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--sócios-->
+                            <div class="card card-border mb-4 hide" id="resultadoSocios">
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Sócios</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>CPF: </strong>
+                                                            <span >417.021.***-**</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Status risco: </strong>
+                                                            <span>"Baixo Risco"</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Nome:</strong> 
+                                                            <span>"Jonh Doe" </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Sexo: </strong>
+                                                            <span>M</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Data de nascimento: </strong>
+                                                            <span>"1985/07/26"</span
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong> Idade: </strong>
+                                                            <span>"36"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Endereço: </strong>
+                                                            <span>Rua xpto, 700 - apto 50</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Telefone: </strong> 
+                                                            <span>"(11) 2837-0201"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Óbito: </strong>
+                                                            <span>Não</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Situação cadastral: </strong>
+                                                            <span>"Regular"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Rating: </strong>
+                                                            <span>Baixo Risco</span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Inadimplência: </strong>
+                                                            <span>Nada Consta</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Protesto: </strong>
+                                                            <span>"Nada Consta"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>CCF: </strong>
+                                                            <span>"Nada COnsta"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Liquidez Anual: </strong> R$
+                                                            <span>24.485,00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Nível de movimentação Bancária: </strong>
+                                                            <span>"Médio 3"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Capacidade de crédito: </strong>
+                                                            <span>"Baixo"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cartão de Crédito: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cartão Prime: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Múltiplos cartões: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Crédito Pessoal: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Consignado: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Crédito Imobiliário: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Financiamento de  veículo: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cluster: </strong>
+                                                            <span>"23"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cluster Descrição: </strong>
+                                                            <span>"Profissional Promissor"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Classe Social: </strong>
+                                                            <span>"B1"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Renda: </strong>"R$ 
+                                                            <span>"6.001</span> até R$
+                                                            <span>8.000</span>"
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Renda Faixa: </strong>
+                                                            <span>"Média"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Profissão descrição: </strong>
+                                                            <span>"Empresário"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de Empresas: </strong>
+                                                            <span>"1"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de sócios: </strong>
+                                                            <span>"0"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de funcionários: </strong>
+                                                            <span>"5"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Luxo: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Investidor: </strong>
+                                                            <span>Sim</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Fitness: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Turismo: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Casa Própria: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Celular Pós-pago: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Celular pré-pago: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>TV a  Cabo: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Banda Larga: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card--> 
+
+                            <!--Representantes-->
+                            <div class="card card-border mb-4 hide" id="resultadoRepresentantes">
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Representantes</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>CPF: </strong>          
+                                                            <span >417.021.***-**</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Status risco: </strong>
+                                                            <span>"Baixo Risco"</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Nome:</strong> 
+                                                            <span>"Jonh Doe" </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Sexo: </strong>
+                                                            <span>M</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Data de nascimento: </strong>
+                                                            <span>"1985/07/26"</span
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong> Idade: </strong>
+                                                            <span>"36"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Endereço: </strong>
+                                                            <span>Rua xpto, 700 - apto 50</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Telefone: </strong> 
+                                                            <span>"(11) 2837-0201"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Óbito: </strong>
+                                                            <span>Não</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Situação cadastral: </strong>
+                                                            <span>"Regular"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Rating: </strong>
+                                                            <span>Baixo Risco</span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Inadimplência: </strong>
+                                                            <span>Nada Consta</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Protesto: </strong>
+                                                            <span>"Nada Consta"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>CCF: </strong>
+                                                            <span>"Nada COnsta"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Liquidez Anual: </strong> R$
+                                                            <span>24.485,00</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Nível de movimentação Bancária: </strong>
+                                                            <span>"Médio 3"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Capacidade de crédito: </strong>
+                                                            <span>"Baixo"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cartão de Crédito: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cartão Prime: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Múltiplos cartões: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Crédito Pessoal: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Consignado: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Crédito Imobiliário: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Financiamento de  veículo: </strong>
+                                                            <span>"Não"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cluster: </strong>
+                                                            <span>"23"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Cluster Descrição: </strong>
+                                                            <span>"Profissional Promissor"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Classe Social: </strong>
+                                                            <span>"B1"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Renda: </strong>"R$ 
+                                                            <span>"6.001</span> até R$
+                                                            <span>8.000</span>"
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Renda Faixa: </strong>
+                                                            <span>"Média"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Profissão descrição: </strong>
+                                                            <span>"Empresário"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de Empresas: </strong>
+                                                            <span>"1"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de sócios: </strong>
+                                                            <span>"0"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Quantidade de funcionários: </strong>
+                                                            <span>"5"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Luxo: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Investidor: </strong>
+                                                            <span>Sim</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Fitness: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Turismo: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Casa Própria: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Celular Pós-pago: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Celular pré-pago: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>TV a  Cabo: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="data-result">
+                                                            <strong>Banda Larga: </strong>
+                                                            <span>"Sim"</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+                            
+                            <!--Refin-->
+                            <div class="card card-border mb-4 hide" id="resultadoDetalhePefin">  
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Detalhe Pefin</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Avalista: </strong>
+                                                            <span>"Não" </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Contrato: </strong>
+                                                            <span>"800"</span> 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>data Ocorrência:</strong> 
+                                                            <span>"10/08/2021" </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Modalidade: </strong>
+                                                            <span>"Outras Oper"</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Origem: </strong>
+                                                            <span>"Xpto-vendas e Loc"</span
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="data-result"> 
+                                                            <strong>Valor: </strong> R$
+                                                            <span>1.400,00</span>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+                            
+                            <!--Pefin-->
+                            <div class="card card-border mb-4 hide" id="resultadoDetalheRefin">  
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Detalhe Refin</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Nada Consta: </strong>
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--CCF-->
+                            <div class="card card-border mb-4 hide" id="resultadoDetalheCcf">  
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Detalhe CCF</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Nada Consta: </strong>
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--Divida vencida-->
+                            <div class="card card-border mb-4 hide" id="resultadoDetalheDividaVenc">  
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Detalhe Dívida Vencida</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Nada Consta: </strong>
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+                            
+                            <!--BVS-->
+                            <div class="card card-border mb-4 hide" id="resultadoDetalheBvs">  
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Detalhe BVS</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Nome Associado: </strong>
+                                                            <span>"/CREA-RJ"</span>
+                                                        </div>
+                                                    </li> 
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Telefone Associado: </strong>
+                                                            <span>Null</span>
+                                                        </div>
+                                                    </li> 
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Número Contrato: </strong>
+                                                            <span>"000/00.000-Multa"</span>
+                                                        </div>
+                                                    </li> 
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Data do Vencimento: </strong>
+                                                            <span>"2019/07/06"</span>
+                                                        </div>
+                                                    </li> 
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Valor: </strong> R$
+                                                            <span>"3.421,33"</span>
+                                                        </div>
+                                                    </li> 
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Comprador / Fiador / Avalista: </strong> R$
+                                                            <span>"Comprador"</span>
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                            <!--Protesto-->
+                            <div class="card card-border mb-4 hide" id="resultadoDetalheProtesto">  
+                                <div class="card-header pb-none">
+                                    <h5 class="strong text-primary">Detalhe Protesto</h5>
+                                </div><!--card-header-->
+                                <div class="card-body">
+                                    <div class="row">                                            
+                                        <div class="col-lg-12">
+                                            <div class="content-result">
+                                                <ul>
+                                                    <li>
+                                                        <div class="data-result"> 
+                                                            <strong>Nada Consta: </strong>
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </div><!--result-content-->
+                                        </div><!--col-12-->
+                                    </div><!--row-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+
+                        </div> <!--result-container-->
+                    </div><!--consult-container-->                       
+                </div><!--section-content-->
+            </div><!--container-->
+        </section><!--section-consulta-->
+
+    </main><!--Principal-->
+
+    <footer >
+        <div class="footer-nav bg-white-middle">
+            <div class="container">
+                <div class="footer-nav-content">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="text-primary"><strong>Principal</strong></p>
+                                    <ul class="footer-navbar">
+                                        <li class="footer-nav-item"><a href="#">Home</a></li>
+                                        <li class="footer-nav-item"><a href="#">Comprar crédito</a></li>
+                                        <li class="footer-nav-item"><a href="#">Atendimento</a></li>
+                                        <li class="footer-nav-item"><a href="#">Login </a></li>
+                                    </ul>
+                                </div><!--col-4-->
+                                <div class="col-lg-4">
+                                    <p class="text-primary"><strong>Pacotes</strong></p>
+                                    <ul class="footer-navbar">
+                                        <li class="footer-nav-item"><a href="#">Comprar Pacotes</a></li>
+                                    </ul>
+                                </div><!--col-4-->
+                                <div class="col-lg-4">
+                                    <p class="text-primary"><strong>Acessos</strong></p>
+                                    <ul class="footer-navbar">
+                                        <li class="footer-nav-item"><a href="#">Painel de controle</a></li>
+                                        <li class="footer-nav-item"><a href="#">Cadastre-se</a></li>
+                                        <li class="footer-nav-item"><a href="#">Contato</a></li>
+                                    </ul>
+                                </div><!--col-4-->
+                            </div><!--row-->
+                        </div><!--col-8-->
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="contact-container">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <p><strong>Precisa de um atendimento direto?</strong></p>
+                                            <p>Entre em contato com a CNPJ Consulta Certo pelo</p>
+                                            <p>
+                                                e-mail:
+                                                <strong>
+                                                        <a href="mailto:atendimento@cnpjconsultacerto.com.br"> atendimento@cnpjconsultacerto.com.br</a>
+                                                </strong>
+                                            </p>
+                                        </div><!--contact-content-->
+                                    </div><!--contact-container-->
+                                </div><!--col-12-->
+                            </div><!--row-->
+                        </div><!--col-4-->
+                    </div><!--row-->
+                </div>
+            </div><!--container-->
+        </div><!--footer-nav-->
+
+        <div class="footer-page bg-blue">
+            <div class="container">
+                <div class="footer-page-content">
+                    <div class="footer-brand">
+                        <img src="/Assets/img/brand/CNPJ_Consulta_Certo_logo_branco.png" alt="logotipo Consulta Certo branca" class="img-fluid">
+                    </div>
+                    <div class="footer-copy">Copyright © 2022 CNPJ Consulta Certo / Diretrix.On / Rua Cunha Gago, 700 - 3º andar Pinheiros - São Paulo - SP</div>
+                </div><!--footer-content-->
+            </div><!--container-->
+        </div><!--footer-page-->
+    </footer>
+   
+    
+    <script   src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="/Assets/plugins/d3/d3.min.js"></script>
+    <script src="/Assets/plugins/c3/c3.min.js"></script>
+    <script src="/Assets/js/chartC3.js"></script>
+    <script src="/Assets/js/main.js"></script>
+   
+</body>
+</html>
+
+
