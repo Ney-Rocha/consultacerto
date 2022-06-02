@@ -18,7 +18,7 @@ body {
 h1,
 h2,
 h3 {
-    font-weight: 700;    
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 0;
 }
@@ -207,7 +207,7 @@ ul{
 }
 .bg-gray-middle{
     background-color:#EEF1F4;
-} 
+}
 
 .bg-gray-dark{
     background-color:#DAE5F2;
@@ -226,7 +226,7 @@ ul{
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS BODY BUTTONS ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
- 
+
 
 .btn {
     font-size: 12px;
@@ -248,12 +248,12 @@ ul{
      box-shadow: none!important;
      outline: none !important;
  }
- 
+
  .btn-primary {
      background-color: #05377E;
      border: 1px solid #05377E;
  }
- 
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -261,12 +261,12 @@ ul{
     background-color:  #032e6b;
     border: 1px solid  #032e6b;
 }
- 
+
  .btn-secondary {
      background-color: #1AA0E1;
      border: 1px solid #1AA0E1;
  }
- 
+
  .btn-secondary:hover,
  .btn-secondary:focus,
  .btn-secondary:active,
@@ -274,26 +274,26 @@ ul{
      background-color: #1791ce;
      border: 1px solid #1791ce;
  }
- 
-  
+
+
  .btn-icon {
      display: flex;
      justify-content: center;
      align-items: center;
  }
- 
- 
+
+
  .icon-btn {
      display: flex;
      justify-content: center;
      align-items: center;
      margin-right: 8px;
  }
- 
+
  .icon-btn i {
      font-size: 12px;
  }
- 
+
  .icon-btn i.icon-lg {
      font-size: 18px;
      margin-left: 8px;
@@ -336,14 +336,14 @@ ul{
 }
 
 .card-login{
-    border-radius: 26px; 
-    
+    border-radius: 26px;
+
 }
 
 .card.card-nopad{
     padding: 0;
     overflow: hidden;
-   
+
 }
 
 .card.card-border{
@@ -351,7 +351,7 @@ ul{
     box-shadow:  0px 1px 3px rgb(0 0 0 / .1);
 }
 
-.card-header, 
+.card-header,
 .card-body{
     background-color: inherit;
     border: none;
@@ -440,8 +440,8 @@ ul{
     content: " ";
     position: absolute;
     bottom:-18px;
-    left: 50%; 
-    transform: translateX(-50%); 
+    left: 50%;
+    transform: translateX(-50%);
     height: 18px;
     width: 195px;
     background-color: #1aa0e1;
@@ -538,7 +538,7 @@ ul{
      align-items: center;
      margin: 10px 30px;
  }
- .info-return li{   
+ .info-return li{
    background-color: #1AA0E1;
    border-radius: 10px;
    color:#fff;
@@ -547,7 +547,7 @@ ul{
    line-height: 1;
    margin: 10px 18px;
    padding: 8px 18px;
-   
+
 }
 .plans-poster{
     position: relative;
@@ -608,7 +608,7 @@ ul{
     padding: 10px 20px;
 }
 
-.plans-detail-value{    
+.plans-detail-value{
     border: 3px solid transparent;
     font-weight: 700;
     margin-top: 20px;
@@ -649,7 +649,7 @@ ul{
     background: url('../img/banners/Banner_Atendimento_Original.jpg') no-repeat center center;
     background-size: cover;
     overflow: hidden;
-   
+
    display: block;
 }
 
@@ -677,15 +677,15 @@ ul{
 }
 
 @media screen and (max-width:960px){
-    
-    .info-return{ 
+
+    .info-return{
         align-items: stretch;
         margin: 0;
         font-size:12px;
-        
+
     }
 
-    .info-return li{      
+    .info-return li{
         width:25%;
         display: flex;
         flex: 1;
@@ -704,7 +704,7 @@ ul{
     .consultant-img{
         width: 100%;
         height: 242px;
-       
+
     }
 
     .consultant-poster{
@@ -756,7 +756,7 @@ ul{
 
 
 @media screen and (min-width:1220px){
-    
+
     #banner-cadastre{
         width: 100%;
         overflow: auto;
@@ -767,20 +767,20 @@ ul{
 }
 
 @media screen and (max-width:990px){
-    
+
     #banner-cadastre{
         background: url('../img/banners/Banner_Cadastro.png') no-repeat center right;
     }
 }
 
 @media screen and (max-width:500px){
-    
+
     #banner-cadastre{
         background: linear-gradient( rgba(43 80 144/ .7),rgba(43 80 144/ .7) ), url('../img/banners/Banner_Cadastro.png') no-repeat center right,
         linear-gradient( rgb(43 80 144),rgb(125 136 183) );
     }
 
-    .content-form {       
+    .content-form {
         padding: 0px 10px;
     }
 }
@@ -796,7 +796,7 @@ ul{
 }
 
  @media screen and (min-width:1220px){
-    
+
     #banner-contato{
         width: 100%;
         overflow: auto;
@@ -807,14 +807,14 @@ ul{
 }
 
 @media screen and (max-width:990px){
-    
+
     #banner-contato{
         background: url('../img/banners/Banner_Contato.png') no-repeat center right;
     }
 }
 
 @media screen and (max-width:500px){
-    
+
     #banner-contato{
         background: linear-gradient( rgba(43 80 144/ .7),rgba(43 80 144/ .7) ), url('../img/banners/Banner_Contato.png') no-repeat center right,
         linear-gradient( rgb(43 80 144),rgb(125 136 183) );
@@ -869,7 +869,7 @@ ul{
 .create-count a,
 .info-complice a,
 .info-complice a:hover,
-.info-complice a:focus{    
+.info-complice a:focus{
     color:#1AA0E1;
 }
 
@@ -994,7 +994,7 @@ ul{
      padding: 20px 50px;
  }
 
- 
+
 
  @media screen and (max-width:990px){
     .card-img-prov{
@@ -1025,20 +1025,20 @@ ul{
 
   .sidebar-nav{
       padding: 0;
-      list-style-type: none;      
+      list-style-type: none;
       margin-right: 20px;
   }
 
-  .sidebar-nav-item{    
+  .sidebar-nav-item{
     margin: 10px 0;
     display: block;
   }
 
-  
-  .sidebar-nav-item:first-child{    
+
+  .sidebar-nav-item:first-child{
     margin-top:  0;
   }
-  .sidebar-nav-item:last-child{    
+  .sidebar-nav-item:last-child{
     margin-bottom:  0;
   }
 
@@ -1049,10 +1049,10 @@ ul{
     padding: 10px 20px;
     text-align: center;
     border: 1px solid #b3b3b3;
-    border-radius:4px;   
+    border-radius:4px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     text-decoration: none;
     font-size: 12px;
     line-height: 1.1;
@@ -1069,14 +1069,27 @@ ul{
   .sidebar-nav-item.active a{
     background-color: #1AA0E1;
     border: 1px solid #1AA0E1;
-    color:#fff;    
+    color:#fff;
   }
 
-  .sidebar-nav-item.item-download a{
+  .item-download a{
+    height: 36px;
+    width:275px;
+    max-width: 275px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    border-radius:4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     background-color: #05377E;
     border: 1px solid #05377E;
     color:#fff;
     font-size: 10px;
+    line-height: 1.1;
+    font-weight: 700;
     text-transform: uppercase;
   }
 
@@ -1088,7 +1101,7 @@ ul{
     .consult-container{
         min-height:300px;
     }
-    .sidebar-consult{ 
+    .sidebar-consult{
         position: absolute;
         padding-top: 10px;
         overflow:scroll;
@@ -1099,7 +1112,7 @@ ul{
         bottom: 0;
         z-index:3;
         width:100%;
-       
+
         background-color: #fff;
         transform: translateX(-800px);
         transition: all .5s ease-in-out;
@@ -1110,7 +1123,7 @@ ul{
         height: 100%;
     }
 
-    
+
     .sidebar-nav {
         padding: 20px 20px;
         margin-right: 0;
@@ -1122,7 +1135,7 @@ ul{
     }
 
     .sidebar-consult ~ .icon-mobile-control,
-    .sidebar-consult.show ~ .icon-mobile-control{    
+    .sidebar-consult.show ~ .icon-mobile-control{
         content: "";
         position: fixed;
         width: 40px;
@@ -1139,12 +1152,12 @@ ul{
         z-index: 10;
     }
 
-    .sidebar-consult.show ~ .icon-mobile-control::before{        
-        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f100";        
+    .sidebar-consult.show ~ .icon-mobile-control::before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f100";
     }
 
     .sidebar-consult ~ .icon-mobile-control::before{
-        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f101";        
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f101";
     }
 
   }
@@ -1161,7 +1174,7 @@ ul{
 .content-result ul{
     margin: 0;
     padding: 0;
-    list-style: none; 
+    list-style: none;
 }
 
 .content-result ul li{
@@ -1223,7 +1236,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content:start ;    
+    justify-content:start ;
     clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
 
@@ -1285,17 +1298,17 @@ ul{
 }
 
 .package-action{
-    display: block;   
+    display: block;
     width: 100%;
     margin-top: 15px;
 }
 
 .call-to-action{
-   
+
     height: 42px;
     padding:12px 25px;
     border-radius:5px;
-    width: 100%;    
+    width: 100%;
     text-align: center;
     font-size: 12px;
     font-weight: 700;
@@ -1539,7 +1552,14 @@ ul{
     font-size: 12px;
     line-height: 1.2;
     text-transform: uppercase;
-    border-bottom: 3px solid transparent;
+    /* border-bottom: 3px solid transparent; */
+    
+}
+
+navbar-expand-lg .navbar-nav .nav-link span{
+   
+    border-bottom: 3px solid #fff;
+    
 }
 
 
@@ -1558,11 +1578,13 @@ ul{
     background-color:#1AA0E1;
     position: relative;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link span:hover,
 .navbar-expand-lg .navbar-nav.nav-restrict .nav-link span:hover{
-    border-bottom: 3px solid rgba(26, 159, 225, 0.498);
+    border-bottom: 3px solid rgba(26, 159, 225, 0.498)!important;
+    transition: all 0.1s ease-in-out;
  }
- 
+
  .navbar-expand-lg .navbar-nav .nav-link.active span,
  .navbar-expand-lg .navbar-nav.nav-restrict .nav-link.active span{
      border-bottom: 3px solid #1aa0e1;
@@ -1598,7 +1620,7 @@ ul{
     top: 100%;
     right: 0;
     left:auto!important;
-    
+
 }
 
 .dropdown-item {
@@ -1729,7 +1751,7 @@ ul{
 @media screen and (max-width:990px){
     .footer-navbar{
         margin-bottom: 40px;
-    }    
+    }
 
     .footer-nav-content {
         text-align: center;
@@ -2143,4 +2165,11 @@ select:disabled ~ .chosen-container-single .chosen-single {
     .c3-chart-arc text.c3-gauge-value{
         font-size: 40px!important;
     }
+}
+
+
+.content-chart{
+    width: 100%;
+    max-width: 100%;
+    display: block;
 }
