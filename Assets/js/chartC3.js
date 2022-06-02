@@ -1,6 +1,12 @@
        //menu js teste
 $(document).ready(function(){
     
+    gerarGrafico();
+    
+   
+})
+      
+function gerarGrafico (){
     var chart = c3.generate({
         data: {
             columns: [
@@ -66,7 +72,4 @@ $(document).ready(function(){
 
     var scoreResume = 835
     
-    
-   
-})
-       
+}

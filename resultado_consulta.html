@@ -1277,13 +1277,7 @@
     <script src="Assets/plugins/c3/c3.min.js"></script>
     <script src="Assets/js/chartC3.js"></script>
     <script src="Assets/js/main.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
+   
 
     <script src="Assets/js/print.js"></script>
 
@@ -1291,8 +1285,8 @@
         $(document).ready(function(){
 
             $('#Download_PDF').on("click", function(){
+                var activeNav = $('.sidebar-nav-item.active').find('a')
                 $('#resultContainer').children().removeClass('hide')
-                $('#chart').addClass('hide')
                 var teste = "Marcos";
                 var date = new Date().toLocaleDateString();
                 $('#resultContainer').print({
@@ -1304,11 +1298,8 @@
                     prepend :"<div class='text-print'><div class='content-brand-print'><div class='brand-print'><img src='Assets/img/brand/CNPJ_Consulta_Certo_logo.png' class='responsive_img'></div></div><div class='mb-4'><span class='mr-1 '><i class='fas fa-exclamation-circle'></i></span> Este documento foi gerado pelo usuário <strong>" + teste +"</strong> em <strong>" + date +"</strong> através da ferramenta <strong>Consulta Certo&copy;</strong> e só poderá ser utilizada para as devidas atividades de acordo com termo de aceitação de uso e termo de proteção e privacidade de dados, deixando este usuário com total responsabilidade sobre as devidas precauções de proteção, sob as penas previstas no CONTRATO e nas legislações aplicáveis.</div></div></div> ",
                     append :"<div class='text-print'><div class='mb-4'><span class='mr-1 '><i class='fas fa-exclamation-circle'></i></span> Este documento foi gerado pelo usuário <strong>" + teste +"</strong> em <strong>" + date +"</strong> através da ferramenta <strong>Consulta Certo&copy;</strong> e só poderá ser utilizada para as devidas atividades de acordo com termo de aceitação de uso e termo de proteção e privacidade de dados, deixando este usuário com total responsabilidade sobre as devidas precauções de proteção, sob as penas previstas no CONTRATO e nas legislações aplicáveis.<div class='content-brand-print'><div class='brand-print'><img src='Assets/img/brand/CNPJ_Consulta_Certo_logo.png' class='responsive_img'></div></div> ",
                 });
-                $('#resultContainer').children().addClass('hide')
-                $('#chart').resize()
-                $('#chart').removeClass('hide')
-                $('.sidebar-nav-item.active').click();
-               
+                 $('#resultContainer').children().addClass('hide')
+                 activeNav.click()
             })  
 
             
