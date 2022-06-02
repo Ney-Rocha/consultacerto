@@ -9,8 +9,8 @@
      <link rel="apple-touch-icon" href="Assets/img/favicon/apple-icon-180x180.png" sizes="180x180">
      <link rel="icon" href="Assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
      <link rel="icon" href="Assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-     <link rel="icon" href="Assets/img/favicon/apple-icon.png">    
- 
+     <link rel="icon" href="Assets/img/favicon/apple-icon.png">
+
       <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
@@ -35,7 +35,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav nav-restrict">
-                        
+
                         <a  href="pacotes.html" class="nav-link "><span>Pacotes</span></a>
                         <a  href="contato.html" class="nav-link" ><span>Atendimento</span></a>
                         <a href="home_restrita.html" class="nav-link"><span>Nova Consulta</span></a>
@@ -50,9 +50,9 @@
                                 <a class="dropdown-item" href="#">
                                     <div class="data-user">
                                         <i class="fa fa-user fa-fw"></i> Usuário
-                                        <span class="pull-right ">Marcos</span>                                        
+                                        <span class="pull-right ">Marcos</span>
                                     </div>
-                                </a>                                    
+                                </a>
                                 <div class="dropdown-item-content"></div>
                                 <a class="dropdown-item" href="#">
                                     <i class="fa fa-wifi fa-fw"></i> I.P
@@ -65,7 +65,7 @@
                                 </a>
                                 <div class="dropdown-item-content"></div>
                                 <a class="dropdown-item" href="login.html">
-                                    <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                    <i class="fa fa-sign-out-alt fa-fw"></i>
                                     <span class="pull-right">Sair</span>
                                 </a>
                             </div><!--dropdown-menu-->
@@ -87,14 +87,14 @@
 
     <main class="main bg-white ">
 
-        <section id="consulta">               
+        <section id="consulta">
             <div class="container">
                 <div class="section-content">
-                    
+
                     <div class="consult-container ">
 
                         <div class="sidebar-consult" id="sidebar">
-                            
+
                             <ul class="sidebar-nav" >
                                 <li class="sidebar-nav-item active">
                                     <a href="#" id="resumoConsulta" data-toggle="tooltip" data-placement="right" title="Resumo Score">Resumo Score</a>
@@ -109,7 +109,7 @@
                                     <a href="#" id="emails" data-toggle="tooltip" data-placement="right" title="Emails">Emails</a>
                                 </li>
                                 <li class="sidebar-nav-item">
-                                    
+
                                     <a href="#" id="telefones" data-toggle="tooltip" data-placement="right" title="Telefones">Telefones</a>
                                 </li>
                                 <li class="sidebar-nav-item">
@@ -139,86 +139,88 @@
                                 <li class="sidebar-nav-item">
                                     <a href="#" id="detalheProtesto" data-toggle="tooltip" data-placement="right" title="Detalhe Protesto">Detalhe Protesto</a>
                                 </li>
-                                <li class="sidebar-nav-item item-download">
-                                    <a href="#" id="Download do relatório em PDF" data-toggle="tooltip" data-placement="right" title="Download do relatório em PDF">
-                                        <span class="mr-2"> 
+                                <li class="item-download">
+                                    <a href="#" id="Download_PDF" data-toggle="tooltip" data-placement="right" title="Download do relatório em PDF" >
+                                        <span class="mr-2">
                                             <i class="fa fa-file-pdf " aria-hidden="true"></i>
-                                        </span>                                           
+                                        </span>
                                         Download do relatório em PDF
                                     </a>
                                 </li>
-                            </ul>                               
+                            </ul>
                         </div><!--sidebar-consult-->
 
                         <div class="icon-mobile-control" id="sidebar-menu">
                         </div><!--icon-mobile-->
-                        
-                        <div class="result-container">
+
+                        <div class="result-container" id="resultContainer">
 
                             <!--resumo score-->
-                            <div class="card card-border card-border mb-4"  id="resultadoResumoConsulta" >
+                            <div class="card card-border card-border print mb-4"  id="resultadoResumoConsulta" >
                                 <div class="card-header  ">
                                     <h5 class="strong text-primary">Resumo Score</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <div id="chart"></div>
+                                            <div class="content-chart">
+                                                <div id="chart"></div>
+                                            </div>
                                         </div> <!--col-6-->
                                         <div class="col-lg-6">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
-                                                            <strong>CCF: </strong>  
+                                                        <div class="data-result">
+                                                            <strong>CCF: </strong>
                                                             <span >0</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Dívida vencida:</strong> R$ 
-                                                            <span>0</span> 
+                                                            <div class="data-result">
+                                                            <strong>Dívida vencida:</strong> R$
+                                                            <span>0</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>PEFIN:</strong> R$ 
+                                                            <div class="data-result">
+                                                            <strong>PEFIN:</strong> R$
                                                             <span>38.991,84 </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>PEFIN dívida ativa: </strong> R$ 
+                                                            <div class="data-result">
+                                                            <strong>PEFIN dívida ativa: </strong> R$
                                                             <span>8.991,84:</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>PEFIN percentual: </strong>  
+                                                            <div class="data-result">
+                                                            <strong>PEFIN percentual: </strong>
                                                             <span>10.83</span>%
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Dívida ativa percentual: </strong>  
+                                                            <div class="data-result">
+                                                            <strong>Dívida ativa percentual: </strong>
                                                             <span>0.0</span>%
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>REFIN: </strong> R$ 
+                                                            <div class="data-result">
+                                                            <strong>REFIN: </strong> R$
                                                             <span>0,00</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Protesto: </strong> R$ 2
                                                             <span>0.000,00</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Protesto Percentual: </strong>  
+                                                            <div class="data-result">
+                                                            <strong>Protesto Percentual: </strong>
                                                             <span>11.6</span>%
                                                         </div>
                                                     </li>
@@ -230,65 +232,65 @@
                             </div><!--card-->
 
                             <!--dados Cadastrais-->
-                            <div class="card card-border mb-4 hide" id="resultadoDadosCadastrais">
+                            <div class="card card-border mb-4 print hide" id="resultadoDadosCadastrais">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Dados Cadastrais</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>CNPJ: </strong>
                                                             <span >000.000.000/0000-00</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Status risco: </strong>
-                                                            <span>"Baixo Risco"</span> 
+                                                            <span>"Baixo Risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Razão social:</strong> 
+                                                            <div class="data-result">
+                                                            <strong>Razão social:</strong>
                                                             <span>"empresa XPTO" </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Nome Fantasia: </strong>
                                                             <span>fantasia XPTO</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Situação Cadastral: </strong>
                                                             <span>"Ativa"</span
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Natureza Jurídica: </strong>
                                                             <span>”2062 - SOCIEDADE EMPRESÁRIA LIMITADA”</span>%
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>REFIN: </strong>
                                                             <span>0,00</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>CNAE: </strong> 
+                                                            <div class="data-result">
+                                                            <strong>CNAE: </strong>
                                                             <span>"Construção XPTO"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Cód. IBGE: </strong>
                                                             <span>3201407</span>%
                                                         </div>
@@ -302,8 +304,8 @@
                                                     <li>
                                                         <div class="data-result">
                                                             <strong>Faixa de Faturamento: </strong>
-                                                            Dê R$ 
-                                                            <span>240,01 Mil</span> á R$ 
+                                                            Dê R$
+                                                            <span>240,01 Mil</span> á R$
                                                             <span>2.4 MM</span>
                                                         </div>
                                                     </li>
@@ -382,52 +384,52 @@
                             </div><!--card-->
 
                             <!--Endereços-->
-                            <div class="card card-border mb-4 hide" id="resultadoEnderecos">
+                            <div class="card card-border mb-4 print hide" id="resultadoEnderecos">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Endereços</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Endereço: </strong>
                                                             <span >********************</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Bairro: </strong>
-                                                            <span>"Pinheiros"</span> 
+                                                            <span>"Pinheiros"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Cidade:</strong> 
+                                                            <div class="data-result">
+                                                            <strong>Cidade:</strong>
                                                             <span>"São Paulo" </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>UF: </strong>
                                                             <span>SP</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>CEP: </strong>
                                                             <span>"05421-000"</span
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Setor: </strong>
                                                             <span>NULL</span>
                                                         </div>
                                                     </li>
-                                                    
+
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
@@ -436,23 +438,23 @@
                             </div><!--card-->
 
                             <!--emails-->
-                            <div class="card card-border mb-4 hide" id="resultadoEmails">
+                            <div class="card card-border mb-4 print hide" id="resultadoEmails">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Emails </h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Email 1: </strong>
                                                             <span >"contatoxpto@xpto.com.br"</span>
                                                         </div>
                                                     </li>
-                                                    
-                                                    
+
+
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
@@ -462,23 +464,23 @@
 
 
                             <!--Telefones-->
-                            <div class="card card-border mb-4 hide" id="resultadoTelefones">
+                            <div class="card card-border mb-4 print hide" id="resultadoTelefones">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Telefones </h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>DDD: </strong>
                                                             <span >"11"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Telefone: </strong>
                                                             <span >"2827-0201"</span>
                                                         </div>
@@ -491,90 +493,90 @@
                             </div><!--card-->
 
                             <!--Scores-->
-                            <div class="card card-border mb-4 hide"  id="resultadoScore" >
-                                <div class="card-header  ">
+                            <div class="card card-border mb-4 print hide"  id="resultadoScore" >
+                                <div class="card-header  pb-none">
                                     <h5 class="strong text-primary">Score / Limites</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
                                     <div class="row">
-                                        
+
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
-                                                            <strong>Capital Social: </strong> R$ 
+                                                        <div class="data-result">
+                                                            <strong>Capital Social: </strong> R$
                                                             <span >50.000,00</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Vl. fat. Pres. Anual:</strong> R$ 
-                                                            <span>36.000.00</span> 
+                                                            <div class="data-result">
+                                                            <strong>Vl. fat. Pres. Anual:</strong> R$
+                                                            <span>36.000.00</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Capacidade pagamento:</strong> R$ 
+                                                            <div class="data-result">
+                                                            <strong>Capacidade pagamento:</strong> R$
                                                             <span>138.991,84 </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Limite de Crédito Diretrix: </strong> R$ 
+                                                            <div class="data-result">
+                                                            <strong>Limite de Crédito Diretrix: </strong> R$
                                                             <span>48.991,84:</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Status risco: </strong>  
+                                                            <div class="data-result">
+                                                            <strong>Status risco: </strong>
                                                             <span>"Baixo risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Score covid: </strong>  
+                                                            <div class="data-result">
+                                                            <strong>Score covid: </strong>
                                                             <span>"Baixo Risco</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Score Compliance: </strong> 
+                                                            <div class="data-result">
+                                                            <strong>Score Compliance: </strong>
                                                             <span>Null</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Score Pefin: </strong>
                                                             <span>"Alto risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Score Refin: </strong>
                                                             <span>"Alto risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Score CCF: </strong>
                                                             <span>"Médio risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Score Classe: </strong>
                                                             <span>"Médio risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Classe: </strong>
                                                             <span>"E"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Porte descrição: </strong>
                                                             <span>"Pequeno"</span>
                                                         </div>
@@ -587,65 +589,65 @@
                             </div><!--card-->
 
                             <!--sócios-->
-                            <div class="card card-border mb-4 hide" id="resultadoSocios">
+                            <div class="card card-border mb-4 print hide" id="resultadoSocios">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Sócios</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>CPF: </strong>
                                                             <span >417.021.***-**</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Status risco: </strong>
-                                                            <span>"Baixo Risco"</span> 
+                                                            <span>"Baixo Risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Nome:</strong> 
+                                                            <div class="data-result">
+                                                            <strong>Nome:</strong>
                                                             <span>"Jonh Doe" </span>
                                                         </div>
                                                     </li>
                                                     <!-- <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Sexo: </strong>
                                                             <span>M</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Data de nascimento: </strong>
                                                             <span>"1985/07/26"</span
                                                         </div>
                                                     </li> -->
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong> Idade: </strong>
                                                             <span>"36"</span>
                                                         </div>
                                                     </li>
                                                     <!-- <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Endereço: </strong>
                                                             <span>Rua xpto, 700 - apto 50</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>Telefone: </strong> 
+                                                            <div class="data-result">
+                                                            <strong>Telefone: </strong>
                                                             <span>"(11) 2837-0201"</span>
                                                         </div>
                                                     </li> -->
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Óbito: </strong>
                                                             <span>Não</span>
                                                         </div>
@@ -761,7 +763,7 @@
                                                     </li>
                                                     <li>
                                                         <div class="data-result">
-                                                            <strong>Renda: </strong>"R$ 
+                                                            <strong>Renda: </strong>"R$
                                                             <span>"6.001</span> até R$
                                                             <span>8.000</span>"
                                                         </div>
@@ -855,44 +857,44 @@
                                         </div><!--col-12-->
                                     </div><!--row-->
                                 </div><!--card-body-->
-                            </div><!--card--> 
+                            </div><!--card-->
 
                             <!--Representantes-->
-                            <div class="card card-border mb-4 hide" id="resultadoRepresentantes">
+                            <div class="card card-border mb-4 print hide" id="resultadoRepresentantes">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Representantes</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>CPF: </strong>
                                                             <span >417.021.***-**</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Status risco: </strong>
-                                                            <span>"Baixo Risco"</span> 
+                                                            <span>"Baixo Risco"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
-                                                            <strong>Nome:</strong> 
+                                                        <div class="data-result">
+                                                            <strong>Nome:</strong>
                                                             <span>"Jonh Doe" </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong> Idade: </strong>
                                                             <span>"36"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Óbito: </strong>
                                                             <span>Não</span>
                                                         </div>
@@ -934,14 +936,14 @@
                                                             <span>24.485,00</span>
                                                         </div>
                                                     </li>
-                                                    
+
                                                     <li>
                                                         <div class="data-result">
                                                             <strong>Capacidade de crédito: </strong>
                                                             <span>"Baixo"</span>
                                                         </div>
                                                     </li>
-                                                   
+
                                                     <li>
                                                         <div class="data-result">
                                                             <strong>Classe Social: </strong>
@@ -950,7 +952,7 @@
                                                     </li>
                                                     <li>
                                                         <div class="data-result">
-                                                            <strong>Renda: </strong>"R$ 
+                                                            <strong>Renda: </strong>"R$
                                                             <span>"6.001</span> até R$
                                                             <span>8.000</span>"
                                                         </div>
@@ -985,83 +987,83 @@
                                                             <span>"5"</span>
                                                         </div>
                                                     </li>
-                                                    
+
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
                                     </div><!--row-->
                                 </div><!--card-body-->
                             </div><!--card-->
-                            
+
                             <!--Refin-->
-                            <div class="card card-border mb-4 hide" id="resultadoDetalhePefin">  
+                            <div class="card card-border mb-4 print hide" id="resultadoDetalhePefin">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Detalhe Pefin</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Avalista: </strong>
                                                             <span>"Não" </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Contrato: </strong>
-                                                            <span>"800"</span> 
+                                                            <span>"800"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
-                                                            <strong>data Ocorrência:</strong> 
+                                                            <div class="data-result">
+                                                            <strong>data Ocorrência:</strong>
                                                             <span>"10/08/2021" </span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Modalidade: </strong>
                                                             <span>"Outras Oper"</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Origem: </strong>
                                                             <span>"Xpto-vendas e Loc"</span
                                                         </div>
                                                     </li>
                                                     <li>
-                                                            <div class="data-result"> 
+                                                            <div class="data-result">
                                                             <strong>Valor: </strong> R$
                                                             <span>1.400,00</span>
                                                         </div>
                                                     </li>
-                                                    
+
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
                                     </div><!--row-->
                                 </div><!--card-body-->
                             </div><!--card-->
-                            
+
                             <!--Pefin-->
-                            <div class="card card-border mb-4 hide" id="resultadoDetalheRefin">  
+                            <div class="card card-border mb-4 print hide" id="resultadoDetalheRefin">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Detalhe Refin</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Nada Consta: </strong>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
@@ -1070,20 +1072,20 @@
                             </div><!--card-->
 
                             <!--CCF-->
-                            <div class="card card-border mb-4 hide" id="resultadoDetalheCcf">  
+                            <div class="card card-border mb-4 print hide" id="resultadoDetalheCcf">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Detalhe CCF</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Nada Consta: </strong>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
@@ -1092,73 +1094,73 @@
                             </div><!--card-->
 
                             <!--Divida vencida-->
-                            <div class="card card-border mb-4 hide" id="resultadoDetalheDividaVenc">  
+                            <div class="card card-border mb-4 print hide" id="resultadoDetalheDividaVenc">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Detalhe Dívida Vencida</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Nada Consta: </strong>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
                                     </div><!--row-->
                                 </div><!--card-body-->
                             </div><!--card-->
-                            
+
                             <!--BVS-->
-                            <div class="card card-border mb-4 hide" id="resultadoDetalheBvs">  
+                            <div class="card card-border mb-4 print hide" id="resultadoDetalheBvs">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Detalhe BVS</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Nome Associado: </strong>
                                                             <span>"/CREA-RJ"</span>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Telefone Associado: </strong>
                                                             <span>Null</span>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Número Contrato: </strong>
                                                             <span>"000/00.000-Multa"</span>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Data do Vencimento: </strong>
                                                             <span>"2019/07/06"</span>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Valor: </strong> R$
                                                             <span>"3.421,33"</span>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Comprador / Fiador / Avalista: </strong> R$
                                                             <span>"Comprador"</span>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
@@ -1167,20 +1169,20 @@
                             </div><!--card-->
 
                             <!--Protesto-->
-                            <div class="card card-border mb-4 hide" id="resultadoDetalheProtesto">  
+                            <div class="card card-border mb-4 print hide" id="resultadoDetalheProtesto">
                                 <div class="card-header pb-none">
                                     <h5 class="strong text-primary">Detalhe Protesto</h5>
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <div class="row">                                            
+                                    <div class="row">
                                         <div class="col-lg-12">
                                             <div class="content-result">
                                                 <ul>
                                                     <li>
-                                                        <div class="data-result"> 
+                                                        <div class="data-result">
                                                             <strong>Nada Consta: </strong>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
                                             </div><!--result-content-->
                                         </div><!--col-12-->
@@ -1189,7 +1191,7 @@
                             </div><!--card-->
 
                         </div> <!--result-container-->
-                    </div><!--consult-container-->                       
+                    </div><!--consult-container-->
                 </div><!--section-content-->
             </div><!--container-->
         </section><!--section-consulta-->
@@ -1256,24 +1258,65 @@
 
         <div class="footer-page bg-blue">
             <div class="container">
-                <div class="footer-page-content">
+                <div class="footer-page-content"> 
                     <div class="footer-brand">
                         <img src="Assets/img/brand/CNPJ_Consulta_Certo_logo_branco.png" alt="logotipo Consulta Certo branca" class="img-fluid">
                     </div>
-                    <div class="footer-copy">Copyright © 2022 CNPJ Consulta Certo / Diretrix.On / Rua Cunha Gago, 700 - 3º andar Pinheiros - São Paulo - SP</div>
+                    <div class="footer-copy">Copyright © 2022 CNPJ Consulta Certo / Diretrix.On / Rua Cunha Gago, 700 - 3º andar Pinheiros - São Paulo - SP  </div>
                 </div><!--footer-content-->
             </div><!--container-->
         </div><!--footer-page-->
     </footer>
-   
+
     
+
+
     <script   src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="Assets/plugins/d3/d3.min.js"></script>
     <script src="Assets/plugins/c3/c3.min.js"></script>
     <script src="Assets/js/chartC3.js"></script>
     <script src="Assets/js/main.js"></script>
-   
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
+
+    <script src="Assets/js/print.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#Download_PDF').on("click", function(){
+                $('#resultContainer').children().removeClass('hide')
+                $('#chart').addClass('hide')
+                var teste = "Marcos";
+                var date = new Date().toLocaleDateString();
+                $('#resultContainer').print({
+                    addGlobalStyles : false,
+                    stylesheet : 'Assets/css/print.css',
+                    rejectWindow : false,
+                    noPrintSelector : ".no-print",
+                    iframe : true,                   
+                    prepend :"<div class='text-print'><div class='content-brand-print'><div class='brand-print'><img src='Assets/img/brand/CNPJ_Consulta_Certo_logo.png' class='responsive_img'></div></div><div class='mb-4'><span class='mr-1 '><i class='fas fa-exclamation-circle'></i></span> Este documento foi gerado pelo usuário <strong>" + teste +"</strong> em <strong>" + date +"</strong> através da ferramenta <strong>Consulta Certo&copy;</strong> e só poderá ser utilizada para as devidas atividades de acordo com termo de aceitação de uso e termo de proteção e privacidade de dados, deixando este usuário com total responsabilidade sobre as devidas precauções de proteção, sob as penas previstas no CONTRATO e nas legislações aplicáveis.</div></div></div> ",
+                    append :"<div class='text-print'><div class='mb-4'><span class='mr-1 '><i class='fas fa-exclamation-circle'></i></span> Este documento foi gerado pelo usuário <strong>" + teste +"</strong> em <strong>" + date +"</strong> através da ferramenta <strong>Consulta Certo&copy;</strong> e só poderá ser utilizada para as devidas atividades de acordo com termo de aceitação de uso e termo de proteção e privacidade de dados, deixando este usuário com total responsabilidade sobre as devidas precauções de proteção, sob as penas previstas no CONTRATO e nas legislações aplicáveis.<div class='content-brand-print'><div class='brand-print'><img src='Assets/img/brand/CNPJ_Consulta_Certo_logo.png' class='responsive_img'></div></div> ",
+                });
+                $('#resultContainer').children().addClass('hide')
+                $('#chart').resize()
+                $('#chart').removeClass('hide')
+                $('.sidebar-nav-item.active').click();
+               
+            })  
+
+            
+
+        })    
+        
+    </script>
+
 </body>
 </html>
 

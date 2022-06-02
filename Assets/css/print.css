@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    background: transparent;
+    -webkit-print-color-adjust: exact; 
+    color: #000;
+    text-shadow: none; 
+    filter: none;
+   -ms-filter: none;
+   page-break-after: auto;
+}
+
+@page {
+    margin-left: 20mm;
+    margin-right: 20mm;
+    margin-top: 20mm;
+    margin-bottom: 20mm;
+    }
+@page :left {
+    margin-left: 30mm;
+    }
+@page :right {
+    margin-right: 30mm;
+    }
+
+.print {
+    display: block;
+}
+
+.no-print {
+    display: none;
+}
+.mb-4{
+    margin-bottom: 10px!important;
+}
+
+.card.card-border{
+    /* border: 1px solid rgba(230, 230, 230, 0.5); */
+    border:none;
+    display: block;
+    width: 100%;
+    max-width: 950px;
+    padding: 5px 20px;
+    box-shadow:none;
+}
+
+.card-header{
+    padding: 10px 0 0;
+    text-align: center;
+}
+
+.card-header h5{
+    font-size: 12px;
+    text-align: center;
+}
+.card-body{
+    padding: 5px;
+}
+
+.card{
+    page-break-inside: avoid
+}
+
+.content-result ul li{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0; 
+    font-size: 8px;
+    widows: 10px;
+    orphans: 10px;
+    
+}
+
+.content-result ul li:nth-child(odd){    
+    background-color: rgba(230, 230, 230, 0.5) !important;
+   
+}
+
+.content-result .data-result {
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.text-print{
+    padding: 0 50px;
+}
+
+.text-print {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.text-print i{
+    color:rgba(239, 15, 60, 0.5);
+    font-size: 15px;
+    line-height: 1.2;
+}
+.content-brand-print{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0 px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    page-break-inside:auto;
+    page-break-before:avoid;
+    page-break-after:avoid;
+}
+
+.brand-print{
+    width: 110px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: scale-down;
+    opacity: 0.5;
+}
