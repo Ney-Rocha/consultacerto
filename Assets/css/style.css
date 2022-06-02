@@ -1129,6 +1129,7 @@ ul{
         margin-right: 0;
     }
 
+    .item-download a,
     .sidebar-nav-item a{
         width:100%;
         max-width: 625px;
