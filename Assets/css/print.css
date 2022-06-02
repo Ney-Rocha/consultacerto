@@ -61,6 +61,17 @@
     page-break-inside: avoid
 }
 
+.content-chart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom:  20px;
+    text-align: center;
+}
+#chart{
+    width: 100%!important;
+}
+
 .content-result ul li{
     width: 100%;
     padding: 8px;

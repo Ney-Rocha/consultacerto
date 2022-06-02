@@ -2133,10 +2133,16 @@ select:disabled ~ .chosen-container-single .chosen-single {
 
 /* ============ C3 - Charts ==============*/
 
+.content-chart{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+} 
 
 .c3 svg {
     font-family: 'Montserrat', sans-serif;
     -webkit-tap-highlight-color: transparent;
+    /* max-width: 230px; */
 }
 .c3-chart-arc text.c3-gauge-value{
     opacity: .5!important;
@@ -2162,6 +2168,8 @@ select:disabled ~ .chosen-container-single .chosen-single {
     display: none;
 }
 
+
+
 @media screen and (max-width:425px){
     .c3-chart-arc text.c3-gauge-value{
         font-size: 40px!important;
@@ -2169,8 +2177,4 @@ select:disabled ~ .chosen-container-single .chosen-single {
 }
 
 
-.content-chart{
-    width: 100%;
-    max-width: 100%;
-    display: block;
-}
+
